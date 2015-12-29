@@ -1,6 +1,6 @@
 # php-http_request
 
-The `HttpRequest` in `http_request.php` will simplify cURL calls. This can be used to retrieve information from a server, or to communicate with backend APIs.
+The `HttpRequest` in `HttpRequest.php` will simplify cURL calls. This can be used to retrieve information from a server, or to communicate with backend APIs.
 
 ## Usage
 You are able to perform `GET` or `POST` requests. To do so, just create the `HttpRequest` object with the URL
