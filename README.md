@@ -1,4 +1,4 @@
-# php-http_request
+# php-HttpRequest
 
 The `HttpRequest` in `HttpRequest.php` will simplify cURL calls. This can be used to retrieve information from a server, or to communicate with backend APIs.
 
