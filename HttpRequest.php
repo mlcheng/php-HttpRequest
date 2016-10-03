@@ -26,7 +26,7 @@ class HttpRequest {
 		$this->_url = $url;
 	}
 
-	function get($params) {
+	function get($params = null) {
 		$url = $this->getUrl();
 		$params = $this->processParams($params);
 		$headers = $this->getHeaders();
@@ -51,7 +51,7 @@ class HttpRequest {
 		return $result;
 	}
 
-	function post($params) {
+	function post($params = null) {
 		$url = $this->getUrl();
 		$params = $this->processParams($params);
 
@@ -73,6 +73,10 @@ class HttpRequest {
 	}
 
 	private function processParams($params) {
+		if($params === null) {
+			return;
+		}
+
 		$out = "?";
 		foreach($params as $key=>$value) {
 			$out .= urlencode($key) . "=" . urlencode($value) . "&";
